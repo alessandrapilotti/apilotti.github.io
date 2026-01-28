@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ar.sa Dance School</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<header class="main-header">
+    <div class="header-container">
+        <a href="#" class="logo-area" onclick="showPage('home-page'); return false;">
+            <img src="Imgs/logo/no-bg-logo.jpj.png" class="logo-img" alt="Logo">
+            <h1 class="site-title">Ar.Sa Dance School</h1>
+        </a>
+
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('home-page'); return false;">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('experience-page'); return false;">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery-slider">COURSES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showPage('locations-page'); return false;">LOCATIONS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div id="home-page" class="page-content">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Imgs/carosello/cuore.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Imgs/carosello/mani.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Imgs/carosello/gruppo.JPG" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <div class="achievements-section">
+            <div class="container">
+                <div class="achievement-item">
+                    <div class="number-wrapper">
+                        <span class="number" data-target="4">0</span>
+                    </div>
+                    <p class="label">LOCATIONS</p>
+                    <a href="#" class="btn-know-more" onclick="showPage('locations-page'); return false;">Know more</a>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="number-wrapper">
+                        <span class="number" data-target="30">0</span>
+                    </div>
+                    <p class="label">YEARS OF EXPERIENCE</p>
+                    <a href="#" class="btn-know-more" onclick="showPage('experience-page'); return false;">Know more</a>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="number-wrapper">
+                        <span class="number" data-target="200">0</span>
+                    </div>
+                    <p class="label">WON CHAMPIONSHIPS</p>
+                    <a href="#" class="btn-know-more"onclick="showPage('competitions-page'); return false;">Know more</a>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="number-wrapper">
+                        <span class="number" data-target="1000">0</span>
+                    </div>
+                    <p class="label">SUBSCRIBED DANCERS</p>
+                    <a href="#" class="btn-know-more"onclick="showPage('dancers-page'); return false;">Know more</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="quote-section">
+            <div class="quote-container">
+                <p class="quote-text">Life is a dance, choose how you want to move!</p>
+            </div>
+        </section>
+
+        <section id="gallery-slider" class="gallery-slider">
+            <div class="slider-wrapper">
+                <button class="nav-btn prev" onclick="scrollSlider(-1)">❮</button>
+                <div class="slider-container" id="mainSlider">
+                    <div class="custom-card">
+                        <div class="card-img-box"><video autoplay muted loop playsinline><source src="./Imgs/videogallery/viennese.mp4" type="video/mp4"></video></div>
+                        <div class="card-body">
+                            <h3> STANDARD BALLROOM DANCE</h3>
+                            <p>Experience the grace of fluid motion and impeccable posture. This discipline comprises five classic dances: Waltz, Tango, Viennese Waltz, Slow Foxtrot, and Quickstep. It is a masterclass in tradition, sophistication, and technical harmony.</p>
+                        </div>
+                    </div>
+                    <div class="custom-card">
+                        <div class="card-img-box"><video autoplay muted loop playsinline><source src="./Imgs/videogallery/paso doble.mp4" type="video/mp4"></video></div>
+                        <div class="card-body">
+                            <h3>LATIN DANCES</h3>
+                            <p>An explosion of energy, speed, and raw emotion. This category features the Samba, Cha-Cha-Cha, Rumba, Paso Doble, and Jive. These dances celebrate athletic power, rhythmic precision, and soulful expression.</p>
+                        </div>
+                    </div>
+                    <div class="custom-card">
+                        <div class="card-img-box"><video autoplay muted loop playsinline><source src="./Imgs/videogallery/bachata.mp4" type="video/mp4"></video></div>
+                        <div class="card-body">
+                            <h3>CARRIBEAN DANCES</h3>
+                            <p>The heat of Salsa, the romance of Bachata, and the joyful pulse of Merengue. These styles focus on social connection and vibrant hip movement, bringing the sun-drenched spirit of the Caribbean to the dance floor.</p>
+                        </div>
+                    </div>
+                    <div class="custom-card">
+                        <div class="card-img-box"><video autoplay muted loop playsinline><source src="./Imgs/videogallery/hully gully.mp4" type="video/mp4"></video></div>
+                        <div class="card-body">
+                            <h3>FORMATION DANCES</h3>
+                            <p>When individuality transforms into unity. Teams of couples perform choreographed routines in either the Standard or Latin styles. Witness a breathtaking display of synchronization as dancers move as one, creating complex geometric patterns at lightning speed.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="nav-btn next" onclick="scrollSlider(1)">❯</button>
+            </div>
+        </section></div>
+        
+    <div id="locations-page" class="page-content" style="display: none;">
+    <section class="locations-page">
+          <div class="quote-container">
+                <h3 class="quote-text">OUR LOCATIONS</h3>
+            </div>
+        <div class="map-wrapper">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1SGNV2XyYYj3iqK_fkSpJrygV54DAY_4&ehbc=2E312F&noprof=1"  width="640" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    <div class="about-footer-btn">
+        <button class="btn-back-home" onclick="showPage('home-page')">BACK TO HOME</button>
+    </div>
+    </section>
+</div>
+
+    
+<div id="experience-page" class="page-content" style="display: none;">
+    <section class="about-layout">
+        <div class="about-flex-container"> 
+            <div class="about-image-box">
+                <img src="./Imgs/about.JPG" alt="Our History" class="about-img">
+            </div>
+            <div class="about-text-box">
+                <div class="about-header">
+                    <h2 class="title-main">ABOUT US</h2>
+                    <p>DANCE PASSION SINCE 1996</p>
+                </div>
+                <div class="about-description">
+                    <p>At Ar.Sa Dance, dance is in our blood. Founded to pass on the elegance and discipline of this art form, 
+                        our school is a true extension of our family history. We are Arcangelo and Sabrina, dance and life couple, 
+                        and we run the school together with our son Roberto, a young and qualified teacher!</p>
+                    <p>For thirty years, we’ve served as a home for dancers throughout the Piedmont region, in the North-West of Italy. 
+                        We don't just train champions: we build a family brought together by the heartbeat of the dance floor.</p>
+                    <p> We are very proud because the school recently received the FIDESM Diamond Prize for reaching 1000 subscribed dancers</p>
+                </div>
+                <div class="about-footer-btn">
+                    <button class="btn-back-home" onclick="showPage('home-page')">BACK TO HOME</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="competitions-page" class="page-content" style="display: none;">
+    <section class="competitions-layout">
+        <div class="competitions-flex-container">
+            
+            <div class="comp-text-box">
+                <div class="comp-header">
+                    <h2 class="title-main">AWARDS AND RECOGNITIONS</h2>
+                </div>
+                
+                <ul class="comp-list">
+                    <li>🏆 <strong>Italian Championships:</strong> 1st Place - 2025</li>
+                    <li>🏆 <strong>Regional Piemondt Ballroom:</strong> Gold Medal - 2025</li>
+                </ul>
+
+                <div class="comp-description">
+                    <p>We are very proud to say that during the last 30 years the Italian Dance Federation (FIDESM) and 
+                       the Italian Sport Comitee (CONI) rewarded our school several times.</p>
+                    <p>But the merit is not just ours! These important goals have been reached thanks to the collaboration 
+                       and effort of our talented dancers.</p>
+                    <p>Most of our subscribers have walked important stages and received very prestigious prizes, but 
+                       the greatest honor for us is that few of them decided to become dance teachers as well.</p>
+                </div>
+            </div>
+
+            <div class="comp-gallery-wrapper">
+                <div class="dancers-gallery">
+                    <img src="./Imgs/awardsgallery/premio alice.JPG" alt="img">
+                    <img src="./Imgs/awardsgallery/DSC08862.JPG" alt="img">
+                    <img src="./Imgs/awardsgallery/DSC08865.JPG" alt="img">
+                    <img src="./Imgs/awardsgallery/DSC08868.JPG" alt="img">
+                    <img src="./Imgs/awardsgallery/DSC08869.JPG" alt="img">
+                    <img src="./Imgs/awardsgallery/DSC08875.JPG" alt="img">
+                    <img src="./Imgs/awardsgallery/DSC08885.JPG" alt="img">
+                    <img src="./Imgs/awardsgallery/DSC08896.jpg" alt="img">
+                    <img src="./Imgs/awardsgallery/DSC08906.JPG" alt="img">
+                    <img src="./Imgs/awardsgallery/DSC08908.jpg" alt="img">
+                    <img src="./Imgs/awardsgallery/DSC08917.jpg" alt="img">
+                    <img src="./Imgs/awardsgallery/DSC08924.jpg" alt="img">
+                    <img src="./Imgs/awardsgallery/DSC08943.jpg" alt="img">
+                    </div>
+            </div>
+
+            <div class="comp-footer">
+                <button class="btn-back-home" onclick="showPage('home-page')">BACK TO HOME</button>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+<div id="dancers-page" class="page-content" style="display: none;">
+    <section class="dancers-flex-container">
+        <div class="dancers-text-box">
+            <div class="dancers-header">
+                <h2 class="title-main">OUR DANCERS</h2>
+            </div> 
+            <div class="comp-gallery-wrapper">
+            <div class="dancers-gallery">
+                <img src="./Imgs/dancersgallery/gruppo vestiti.JPG" alt="gruppo">
+                <img src="./Imgs/dancersgallery/fotostandard.JPG" alt="standard">
+                <img src="./Imgs/dancersgallery/fotoliscio.jpg" alt="liscio">
+                <img src="./Imgs/dancersgallery/lezione.JPG" alt="liscio">
+                <img src="./Imgs/dancersgallery/1.jpg" alt="1>">
+                <img src="./Imgs/dancersgallery/2.jpg" alt="2>">
+                <img src="./Imgs/dancersgallery/3.jpg" alt="3>">
+                <img src="./Imgs/dancersgallery/coppia.JPG" alt="coppia">
+                <img src="./Imgs/dancersgallery/fila.JPG" alt="fila">
+            </div>  
+            </div>    
+            <div class="dancers-description">
+                <p>Our school is built on people, not just footsteps. From our youngest dancers taking their very 
+                   first steps to professionals performing on international stages, we celebrate every milestone. 
+                   We don't just teach technique; we nurture the passion that turns a student into a performer.</p>
+                <ul class="dancers-features" style="list-style: none; padding: 0; margin: 0;">
+                    <li><strong>&#128310;All ages:</strong> From 5 y/o to whenever you feel it!</li>
+                    <li><strong>&#128310;All levels:</strong> Beginner, intermediate and advanced courses for every discipline</li>
+                    <li><strong>&#128310;All paces:</strong> Each dancer can choose either a group course or private lessons</li>
+                </ul>
+            </div>
+            <div class="dancers-footer">
+                <button class="btn-back-home" onclick="showPage('home-page')">BACK TO HOME</button>
+            </div>
+        </div>
+    </section>
+</div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>CONTACTS</h4>
+            <p>&#128232;arsadance@gmail.com</p>
+            <p>&#128243;+39 012 345 6789</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>SOCIAL</h4>
+            <p><a href="https://www.instagram.com/arsa_dance?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></p>
+            <p><a href="https://www.facebook.com/profile.php?id=100079850171004&locale=it_IT">Facebook</a></p>
+            <p><a href="https://www.tiktok.com/@arsadance?_r=1&_t=ZN-93Mw3YcBvda">TikTok</a></p>
+        </div>
+
+        <div class="footer-section"> 
+            <h4>OUR LOCATIONS</h4>
+            <p>🔸<a href="https://www.google.com/maps/search/?api=1&query=Viale+Torricelli+23+Vercelli" target="_blank">Viale Torricelli 23, Vercelli (VC)</a></p>
+            <p>🔸<a href="https://www.google.com/maps/search/?api=1&query=Via+Eliso+Rivera+Oviglio" target="_blank">Via Eliso Rivera, Oviglio (AL)</a></p>
+            <p>🔸<a href="https://www.google.com/maps/search/?api=1&query=Via+Fitteria+4+Nizza+Monferrato" target="_blank">Via Fitteria 4, Nizza Monferrato (AT)</a></p>
+            <p>🔸<a href="https://www.google.com/maps/search/?api=1&query=Via+Ettore+Elia+Lauriano" target="_blank">Via Ettore Elia, Lauriano (TO)</a></p>
+            </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 AR.SA DANCE SCHOOL - ALL RIGHTS RESERVED</p>
+    </div>
+</footer>
+
+<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: rgba(255, 255, 255, 0.521); color:#022b61; padding: 20px; text-align: center; display: none; z-index: 1000;">
+    <p>This site uses cookies to provide and improve our services. By clicking 'Accept', you consent to our use of cookies.</p>
+    <button onclick="acceptCookies()" style="background:#022b61; color: white; border: none; padding: 10px 20px; cursor: pointer; margin-right: 10px;">Accept</button>
+    <button onclick="rejectCookies()" style="background: #fdf5e6; color: #022b61; border: none; padding: 10px 20px; cursor: pointer;">Decline</button>
+</div>
+</body>
+</html>
