@@ -1,0 +1,39 @@
+/* Sfondo della presentazione */
+.reveal {
+    background-color: #fdf5e6;
+    color: #022b61;
+    font-size: 36px;
+}
+
+/* Titoli h1 */
+.reveal h1 {
+    color: #022b61;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-transform: none;
+}
+
+/* Titoli h2 */
+.reveal h2 {
+    color: #022b61;
+    text-transform: none;
+    font-size: 1.5em;
+}
+
+/* Testo dei paragrafi e liste */
+.reveal p, .reveal li {
+    font-size: 0.9em;
+    text-align: left;
+}
+
+/* Layout per le slide con testo a metà (per compensare data-background) */
+section[data-background-position="right"] {
+    text-align: left;
+    width: 50%;
+}
+
+section[data-background-position="left"] {
+    text-align: right;
+    margin-left: 50%;
+    width: 50%;
+}
